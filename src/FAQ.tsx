@@ -16,7 +16,7 @@ export function FAQ() {
         <span className="section-kicker"><CircleHelp size={17}/> Dúvidas frequentes</span>
         <h2>Podemos ajudar?</h2>
         <p>Encontre aqui as principais respostas sobre a rematrícula.</p>
-        <a href="#contato-escola" className="text-link">Preciso de ajuda da escola <ArrowRight size={16}/></a>
+        <a href="#contato-escola" className="text-link">Falar com o setor de vagas <ArrowRight size={16}/></a>
       </div>
       <div className="compact-faq-content">
         <div className="faq-list">{featured.map(question)}<div id="more-faqs" hidden={!expanded}>{remaining.map(question)}</div></div>
