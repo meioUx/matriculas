@@ -1,0 +1,40 @@
+export const siteConfig = {
+  city: 'Balneário Camboriú', department: 'Secretaria Municipal de Educação', year: 2027,
+  portalUrl: '', // Preencher somente com a URL HTTPS oficial validada do BC Educar.
+  digitalUrl: 'https://digital.bc.sc.gov.br',
+  playStoreUrl: 'https://play.google.com/store/apps/details?id=com.fabricadesoftwarebc.bcdigital&utm_source=hotsite&utm_medium=cta&utm_campaign=bc_digital_app',
+  appStoreUrl: 'https://apps.apple.com/br/app/bc-digital/id6755857242', editalUrl: '/edital-05-2026.pdf',
+  contentApproved: false,
+  deadlineWarning: 'Perdeu o prazo? Procure imediatamente a secretaria da escola. O edital prevê perda do vínculo com a unidade quando a rematrícula não é realizada no período. Não há garantia de permanência na mesma escola ou no mesmo turno.',
+};
+export const steps = [
+  ['Acesse o BC Educar', 'Entre no portal oficial. O módulo de rematrícula também estará disponível no BC Digital.'],
+  ['Entre com sua conta', 'Utilize o CPF e a senha do responsável. Se precisar, siga a recuperação de senha indicada no sistema.'],
+  ['Selecione seu filho', 'Em “Meus filhos”, escolha o aluno e acesse a rematrícula. Faça o procedimento para cada filho.'],
+  ['Confira os dados', 'Atualize endereço, telefone e dados do aluno. Leia as declarações e autorizações antes de confirmar.'],
+  ['Envie os documentos', 'Anexe o comprovante de residência e a Declaração Vacinal atualizados. Confira a legibilidade e envie.'],
+  ['Acompanhe a análise', 'A escola conferirá os documentos. Consulte o portal e corrija eventuais pendências no prazo do seu calendário.'],
+  ['Consulte o resultado', 'Volte ao portal e consulte “Resultado” para acompanhar a situação, a escola de destino e as orientações.'],
+];
+export const faqs = [
+  ['A rematrícula é gratuita?', 'Sim. O procedimento de rematrícula na Rede Municipal de Ensino é gratuito.'],
+  ['Preciso ir até a escola?', 'A rematrícula é on-line. Se precisar de ajuda para acessar o sistema ou enviar os documentos, procure a equipe gestora da unidade escolar.'],
+  ['Posso fazer pelo celular e pelo BC Digital?', 'Sim, você pode usar o celular. O módulo de rematrícula também estará disponível no BC Digital. A disponibilidade do serviço deve seguir o calendário e as orientações da Secretaria.'],
+  ['Quais documentos preciso enviar?', 'Comprovante de residência emitido nos últimos três meses e Declaração Vacinal atualizada, com validade de 90 dias. Atualize também os dados cadastrais. A escola poderá solicitar documentos adicionais quando necessário.'],
+  ['O que faço se um documento precisar de correção ou for recusado?', 'Consulte o motivo no portal. Se houver pedido de correção, envie o documento solicitado no prazo correspondente à situação do aluno. Se a solicitação for recusada, leia a justificativa e procure a escola.'],
+  ['Como sei se a rematrícula foi aprovada?', 'Acompanhe a situação no portal, na etapa “Resultado”. A aprovação dos documentos e a reserva de vaga, isoladamente, não significam matrícula efetivada. A conclusão depende das validações escolares e do encerramento do ano letivo.'],
+  ['Tenho dois filhos. Preciso fazer duas rematrículas?', 'Sim. Acesse “Meus filhos” e realize o procedimento individualmente para cada aluno, observando os respectivos prazos.'],
+  ['Esqueci minha senha. O que faço?', 'Na tela de acesso, utilize a opção de recuperação de senha disponibilizada pelo portal. Se não conseguir recuperar o acesso, procure a secretaria da escola.'],
+  ['Meu filho não aparece no sistema. Como resolver?', 'Procure a secretaria da escola para conferir o cadastro do responsável e o vínculo com o aluno.'],
+  ['Posso escolher outra escola?', 'A escolha depende das regras de zoneamento, da oferta da próxima etapa e da disponibilidade de vagas. Você não pode escolher livremente qualquer escola da rede. Procure a unidade atual para orientação sobre o seu caso.'],
+  ['Posso escolher o turno?', 'O atendimento depende da oferta e da disponibilidade de vagas, conforme o edital. A rematrícula não permite escolher livremente o turno. Confirme a situação com a escola.'],
+  ['O que acontece se eu perder o prazo?', siteConfig.deadlineWarning + ' Procure a escola para receber orientação sobre os procedimentos aplicáveis. Não há reabertura automática nem manutenção automática da vaga.'],
+  ['A rematrícula garante a mesma turma?', 'Não é possível garantir a mesma turma. A organização depende da etapa de ensino, do resultado final do ano letivo e das regras da rede.'],
+  ['Como funciona a reserva de vaga?', 'A reserva informada no sistema deve ser acompanhada junto com a situação da solicitação. Ela não substitui a efetivação da matrícula nem dispensa os requisitos e as validações escolares.'],
+  ['Preciso cadastrar pessoas autorizadas a buscar meu filho?', 'Quando aplicável, siga as orientações do portal e da unidade escolar para informar terceiros autorizados e apresentar os documentos solicitados. Isso não é uma exigência geral para todas as famílias.'],
+  ['Posso recusar a autorização de uso de imagem?', 'Leia o termo apresentado no portal e registre sua escolha conforme as opções disponíveis. Em caso de dúvida sobre a autorização ou seus efeitos, peça orientação à escola antes de confirmar.'],
+  ['Meu filho vai do Jardim II para o 1º ano. Qual prazo devo seguir?', 'Para mudança de unidade nos casos do item 3.1, alínea h, a rematrícula será de 23 a 25 de novembro de 2026; análise em 26 e 27 de novembro e correções em 02 e 03 de dezembro. Selecione essa situação no calendário e confirme o enquadramento com a escola.'],
+  ['Como solicito período integral?', 'Para Jardim I e 1º ano, nos casos previstos no edital, o registro de interesse e o envio da documentação serão de 26 de outubro a 03 de novembro de 2026. A análise será de 04 a 11 de novembro. Use o link enviado às famílias ou disponibilizado pela Prefeitura. O registro não garante vaga e não substitui a rematrícula.'],
+  ['Meu filho ficou retido. Como fica a rematr?cula?', 'A continuidade escolar depende do resultado final do ano letivo e das regras de organiza??o das turmas. Procure a unidade escolar para orienta??o sobre a s?rie correspondente.'],
+  ['Preciso de ajuda para usar o sistema. Quem pode me orientar?', 'A equipe gestora da unidade escolar poder? ajudar no acesso ao portal, na confer?ncia do cadastro e no procedimento de rematr?cula on-line. Procure a secretaria da escola.'],
+];

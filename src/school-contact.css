@@ -1,0 +1,19 @@
+﻿.school-contact-section{padding:42px 0 0}
+.school-contact-block{padding:30px 32px;border:1px solid #d4e1f1;border-radius:12px;background:#f0f5fc;display:grid;grid-template-columns:1fr 1.2fr;gap:28px 40px;align-items:center}
+.school-contact-intro{display:flex;gap:18px;align-items:flex-start}
+.school-contact-icon{display:grid;place-items:center;width:54px;height:54px;flex-shrink:0;background:white;border:1px solid #dae5f3;border-radius:12px;color:#335e95}
+.school-contact-intro .section-kicker{font-size:10px;margin:0 0 7px}
+.school-contact-intro h2{font-size:24px;letter-spacing:-.7px}
+.school-contact-intro p{font-size:12px;color:#5d728c;line-height:1.8;margin:10px 0 0;max-width:330px}
+.vacancies-contact-channels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.vacancies-contact-link{display:flex;align-items:center;gap:10px;min-height:84px;padding:16px 13px;background:#fff;border:1px solid #d4e1f1;border-radius:9px;color:#234a7f;text-decoration:none;transition:border-color .2s,box-shadow .2s}
+.vacancies-contact-link>svg{flex-shrink:0}
+.vacancies-contact-link>svg:last-of-type{margin-left:auto;width:14px}
+.vacancies-contact-link>span:not(.sr-only){min-width:0}
+.vacancies-contact-link strong{display:block;font-size:12px;line-height:1.5}
+.vacancies-contact-link small{font-size:10px;font-weight:400}
+.vacancies-contact-link strong+span{display:block;font-size:12px;line-height:1.6;overflow-wrap:anywhere;margin-top:3px}
+.vacancies-contact-link:hover{border-color:#335e95;box-shadow:0 4px 12px #234a7f12}
+.vacancies-contact-link:focus-visible{outline:3px solid #335e95;outline-offset:3px}
+@media(max-width:1000px){.school-contact-block{gap:25px;padding:26px;grid-template-columns:1fr 1fr}.school-contact-icon{display:none}.vacancies-contact-channels{grid-template-columns:1fr}}
+@media(max-width:580px){.school-contact-section{padding-top:30px}.school-contact-block{grid-template-columns:1fr;padding:23px}.school-contact-intro h2{font-size:24px}.vacancies-contact-link{min-height:76px}}

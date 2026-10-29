@@ -1,0 +1,40 @@
+﻿/* Motion follows the existing BC blue palette and the global pause control. */
+.site-scroll-progress{position:fixed;inset:0 0 auto;height:3px;background:#2e78d5;transform:scaleX(var(--page-progress,0));transform-origin:left;z-index:100;pointer-events:none;box-shadow:0 0 10px #3787eb88}
+@media(prefers-reduced-motion:no-preference){
+ html{scroll-behavior:smooth}
+ .hero-art.campus-art,.dual-phone-gallery{transform:perspective(1000px) rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg));transition:transform .35s ease-out}
+ .hero .eyebrow>span{box-shadow:0 0 0 0 #4279b838;animation:modern-signal 2.8s ease-out infinite}
+ .hero h1{animation:modern-headline 1s cubic-bezier(.16,1,.3,1) both}
+ .hero .button.primary,.support-actions .button{position:relative;overflow:hidden;isolation:isolate}
+ .hero .button.primary:after,.support-actions .button:after{content:'';position:absolute;inset:-60% auto -60% -80%;width:45%;background:linear-gradient(90deg,transparent,#ffffff38,transparent);transform:skewX(-20deg);animation:modern-sheen 5s ease-in-out infinite;pointer-events:none}
+ .dual-phone-gallery .phone-matriculas .phone-device-frame{animation:modern-phone-back 6s ease-in-out infinite}
+ .dual-phone-gallery .phone-confirmation .phone-device-frame{animation:modern-phone-front 6s -1.5s ease-in-out infinite}
+ .dual-phone-gallery .phone-gallery-halo:before{animation:modern-halo 5s ease-in-out infinite}
+ .guide-workspace .tutorial-browser{animation:modern-screen .5s cubic-bezier(.16,1,.3,1) both}
+ .guide-workspace .tutorial-explanation{animation:modern-screen .5s .08s cubic-bezier(.16,1,.3,1) both}
+ .guide-rail li button{transition:background .2s,border-color .2s,color .2s,translate .25s}
+ .guide-rail li button:hover{translate:4px 0}
+ .guide-rail li button.is-selected>svg:first-of-type{animation:site-icon-pop .45s ease-out}
+ .vacancies-contact-link,.app-store-badge,.faq-list details{transition:translate .25s,box-shadow .25s,border-color .25s,background .25s}
+ .vacancies-contact-link:hover,.vacancies-contact-link:focus-visible{translate:0 -5px;box-shadow:0 12px 22px #234a7f18;border-color:#5a85bd}
+ .vacancies-contact-link>svg{transition:transform .3s}
+ .vacancies-contact-link:hover>svg:first-child{transform:rotate(-12deg) scale(1.15)}
+ .vacancies-contact-link:hover>svg:last-of-type{transform:translate(2px,-2px)}
+ .vacancies-contact-link:active,.app-store-badge:active{translate:0 0;scale:.98}
+ .app-store-badge:hover>img{animation:site-icon-pop .45s ease-out}
+ .faq-list details:hover{border-color:#81a5d3;background:#f6f9fe}
+ .faq-list details[open]{box-shadow:inset 3px 0 #3b72b6}
+ .faq-list details[open]>p{animation:modern-screen .4s ease-out both}
+ .faq-toggle:active{scale:.97}
+}
+@keyframes modern-headline{from{opacity:0;transform:translateY(24px);filter:blur(5px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}
+@keyframes modern-signal{0%{box-shadow:0 0 0 0 #4279b850}75%,100%{box-shadow:0 0 0 12px #4279b800}}
+@keyframes modern-sheen{0%,65%{left:-80%}90%,100%{left:150%}}
+@keyframes modern-phone-back{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-12px) rotate(1deg)}}
+@keyframes modern-phone-front{0%,100%{transform:translateY(0) rotate(1deg)}50%{transform:translateY(-10px) rotate(-1deg)}}
+@keyframes modern-halo{0%,100%{transform:scale(1);opacity:.65}50%{transform:scale(1.07);opacity:1}}
+@keyframes modern-screen{from{opacity:0;transform:translateX(14px) scale(.985)}to{opacity:1;transform:translateX(0) scale(1)}}
+html[data-motion-paused=true]{scroll-behavior:auto}
+html[data-motion-paused=true] .hero h1,html[data-motion-paused=true] .tutorial-browser,html[data-motion-paused=true] .tutorial-explanation{animation:none!important;opacity:1;filter:none}
+html[data-motion-paused=true] .hero-art.campus-art,html[data-motion-paused=true] .dual-phone-gallery{transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.site-scroll-progress{box-shadow:none}}
