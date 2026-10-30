@@ -2,8 +2,9 @@
 import assert from 'node:assert/strict';
 import { calendars, calendarStatus } from '../src/calendar.ts';
 
-test('all six official situations have their distinct periods', () => {
+test('all calendar options have their official periods', () => {
  assert.deepEqual(calendars.map(c => [c.id,c.enrollment.start,c.enrollment.end]), [
+ ['jardim-i-ii','2026-11-03','2026-11-06'],
  ['infantil','2026-11-03','2026-11-06'],['fundamental','2026-11-16','2026-11-23'],
  ['maternal','2026-11-16','2026-11-19'],['jardim','2026-11-23','2026-11-25'],
  ['sexto','2026-12-02','2026-12-03'],['integral','2026-10-26','2026-11-03']]);
