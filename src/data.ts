@@ -1,6 +1,6 @@
 export const siteConfig = {
   city: 'Balneário Camboriú', department: 'Secretaria Municipal de Educação', year: 2027,
-  portalUrl: '', // Preencher somente com a URL HTTPS oficial validada do BC Educar.
+  portalUrl: 'https://educar.bc.sc.gov.br/responsavel/entrar',
   digitalUrl: 'https://digital.bc.sc.gov.br',
   playStoreUrl: 'https://play.google.com/store/apps/details?id=com.fabricadesoftwarebc.bcdigital&utm_source=hotsite&utm_medium=cta&utm_campaign=bc_digital_app',
   appStoreUrl: 'https://apps.apple.com/br/app/bc-digital/id6755857242', editalUrl: '/edital-05-2026.pdf',
